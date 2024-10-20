@@ -23,22 +23,27 @@ graphy = {
     'Neamt': {'Iasi': 87}
 }
 
+def uniform_cost(graphy, source, destination):
+    priority_queue = PriorityQueue()
+    visited = {}
 
-def uniform_cost(graphy,source,destination):
-    priority_queue, visited = PriorityQueue(),{}
     priority_queue.put((0, source, [source]))
     visited[source] = 0
-    while not priority_queue.empty():
-        (cost, vertex, path)  = priority_queue.get()
-        if vertex == destination:
-            return cost, path
-        for neighbour in graphy[vertex]:
-            cost +=graphy[vertex][neighbour]
-            if neighbour not in visited or visited[neighbour] > cost:
-                visited[neighbour] = cost
-                priority_queue.put((cost, neighbour, path + [neighbour]))
-    return -1, None
 
+    while not priority_queue.empty():
+        (current_cost, vertex, path) = priority_queue.get()
+
+        if vertex == destination:
+            return current_cost, path
+
+        for neighbour, weight in graphy[vertex].items():
+            new_cost = current_cost + weight 
+
+            if neighbour not in visited or new_cost < visited[neighbour]:
+                visited[neighbour] = new_cost
+                priority_queue.put((new_cost, neighbour, path + [neighbour]))
+
+    return -1, None
 
 if __name__ == "__main__":
     source, destination = 'Arad', 'Bucharest'

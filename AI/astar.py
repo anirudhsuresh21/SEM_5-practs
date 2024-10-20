@@ -47,14 +47,14 @@ straight_line = {
     'Neamt': 234
 }
 
+
 def a_star(source, destination):
-    """Optimal path from source to destination using straight line distance heuristic"""
     priority_queue, visited = PriorityQueue(), {}
-    priority_queue.put((straight_line[source], 0, source, [source]))
+    priority_queue.put((straight_line[source],0, source,[source]))
     visited[source] = straight_line[source]
 
     while not priority_queue.empty():
-        (heuristic, cost, vertex, path) = priority_queue.get()
+        heuristic , cost, vertex, path = priority_queue.get()
         if vertex == destination:
             return heuristic, cost, path
         for next_node in GRAPH[vertex].keys():
@@ -62,7 +62,26 @@ def a_star(source, destination):
             heuristic = current_cost + straight_line[next_node]
             if next_node not in visited or visited[next_node] >= heuristic:
                 visited[next_node] = heuristic
-                priority_queue.put((heuristic, current_cost, next_node, path + [next_node]))
+                priority_queue.put((heuristic,current_cost,next_node, path + [next_node]))
+
+
+
+# def a_star(source, destination):
+#     """Optimal path from source to destination using straight line distance heuristic"""
+#     priority_queue, visited = PriorityQueue(), {}
+#     priority_queue.put((straight_line[source], 0, source, [source]))
+#     visited[source] = straight_line[source]
+
+#     while not priority_queue.empty():
+#         (heuristic, cost, vertex, path) = priority_queue.get()
+#         if vertex == destination:
+#             return heuristic, cost, path
+#         for next_node in GRAPH[vertex].keys():
+#             current_cost = cost + GRAPH[vertex][next_node]
+#             heuristic = current_cost + straight_line[next_node]
+#             if next_node not in visited or visited[next_node] >= heuristic:
+#                 visited[next_node] = heuristic
+#                 priority_queue.put((heuristic, current_cost, next_node, path + [next_node]))
 
 def main():
     """Main function"""
