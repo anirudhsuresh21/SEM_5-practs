@@ -15,7 +15,7 @@ graphy = {
     'Pitesti': {'Rimnicu': 97, 'Craiova': 138, 'Bucharest': 101},
     'Bucharest': {'Fagaras': 211, 'Pitesti': 101, 'Giurgiu': 90, 'Urziceni': 85},
     'Giurgiu': {'Bucharest': 90},
-    'Urziceni': {'Bucharest': 85, 'Vaslui': 142, 'Hirsova': 98},   
+    'Urziceni': {'Bucharest': 85, 'Vaslui': 142, 'Hirsova': 98},
     'Hirsova': {'Urziceni': 98, 'Eforie': 86},
     'Eforie': {'Hirsova': 86},
     'Vaslui': {'Iasi': 92, 'Urziceni': 142},
@@ -37,8 +37,7 @@ def uniform_cost(graphy, source, destination):
             return current_cost, path
 
         for neighbour, weight in graphy[vertex].items():
-            new_cost = current_cost + weight 
-
+            new_cost = current_cost + weight
             if neighbour not in visited or new_cost < visited[neighbour]:
                 visited[neighbour] = new_cost
                 priority_queue.put((new_cost, neighbour, path + [neighbour]))

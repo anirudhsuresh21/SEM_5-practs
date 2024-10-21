@@ -39,3 +39,23 @@ patrons = int(input("How many Patrons: "))
 prediction = tree_clf.predict([[alternate, bar, hungry, waiting, patrons, costly, rain, reservation]])
 
 print("Prediction: ", 'Go' if prediction[0] ==1 else 'No Go')
+
+
+export_graphviz(tree_clf, out_file=None,
+                feature_names=features, class_names=["Don't Go", 'Go'],
+                filled=True, rounded=True, special_characters=True)
+
+
+graph = export_graphviz(tree_clf, out_file='tree.dot',
+                        feature_names=features, class_names=['Don’t Go', 'Go'],
+                        filled=True, rounded=True, special_characters=True)
+
+
+# Convert to PNG
+from subprocess import call
+call(['dot', '-Tpng', 'tree.dot', '-o', 'C:\\Users\\aniru\\Desktop\\Practical\\AI\\output-tree.png'])
+
+
+# Display the image
+img = Image.open('C:\\Users\\aniru\\Desktop\\Practical\\AI\\output-tree.png')
+img.show()
