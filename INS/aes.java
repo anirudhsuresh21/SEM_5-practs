@@ -9,7 +9,6 @@ import java.util.Base64;
 public class aes {
 
     private static final String ALGORITHM = "AES";
-
     public static void main(String[] args) throws Exception {
         String originalText = "Hello, World!";
         // Generate a new AES key
