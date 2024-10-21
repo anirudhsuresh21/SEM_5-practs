@@ -11,10 +11,9 @@ public class des {
     public static void main(String[] args) throws Exception {
         String text = "Hello, World!";
         SecretKey secretKey = generateKey();
-        
         String encryptedText = encrypt(text, secretKey);
         String decryptedText = decrypt(encryptedText, secretKey);
-        
+
         System.out.println("Original Text: " + text);
         System.out.println("Encrypted Text: " + encryptedText);
         System.out.println("Decrypted Text: " + decryptedText);

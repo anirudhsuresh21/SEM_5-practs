@@ -11,12 +11,11 @@ public class aes {
     private static final String ALGORITHM = "AES";
     public static void main(String[] args) throws Exception {
         String originalText = "Hello, World!";
-        // Generate a new AES key
         SecretKey secretKey = generateKey();
 
-        // Encrypt the original text
         String encryptedText = encrypt(originalText, secretKey);
         System.out.println("Encrypted Text: " + encryptedText);
+
         // Decrypt the encrypted text
         String decryptedText = decrypt(encryptedText, secretKey);
         System.out.println("Decrypted Text: " + decryptedText);
