@@ -32,6 +32,28 @@ namespace WebApplication1
             }
             return "Number is odd";
         }
+        [WebMethod]
+        public string ConvertToDollar(int num)
+        {
+            return ((float)num / (float)89).ToString() + "$";
+        }
 
+        [WebMethod]
+        public string GetCurrencyConvertion(int inAmount, string outType, int outRate)
+        {
+            float convertedAmount = (float)inAmount / (float)outRate;
+            return (convertedAmount).ToString() + "$";
+        }
+
+        [WebMethod]
+        public string Grade(double percent)
+        {
+            if (percent > 90)
+            {
+                return "A";
+            }
+
+            return "B";
+        }
     }
 }

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|c:\\users\\aniru\\desktop\\practical\\webservice\\webapplication1\\webapplication1\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|c:\\users\\aniru\\desktop\\practical\\webservice\\webapplication1\\webapplication1\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\webapplication1\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|c:\\users\\aniru\\desktop\\practical\\webservice\\webapplication1\\webapplication1\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\webapplication1\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|c:\\users\\aniru\\desktop\\practical\\webservice\\webapplication1\\webapplication1\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\webapplication1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{66B31EC9-FBD6-48B9-ABF9-8B113D5CF5B7}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\WebApplication1\\Web.config",
+              "RelativeDocumentMoniker": "WebApplication1\\Web.config",
+              "ToolTip": "C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\WebApplication1\\Web.config",
+              "RelativeToolTip": "WebApplication1\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-19T12:43:35.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "WebForm1.aspx.cs",
               "DocumentMoniker": "C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\WebApplication1\\WebForm1.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication1\\WebForm1.aspx.cs",
@@ -39,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WebForm1.aspx",
               "DocumentMoniker": "C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\WebApplication1\\WebForm1.aspx",
               "RelativeDocumentMoniker": "WebApplication1\\WebForm1.aspx",
@@ -52,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "WebService1.asmx.cs",
               "DocumentMoniker": "C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\WebApplication1\\WebService1.asmx.cs",
               "RelativeDocumentMoniker": "WebApplication1\\WebService1.asmx.cs",
               "ToolTip": "C:\\Users\\aniru\\Desktop\\Practical\\WEBSERVICE\\WebApplication1\\WebApplication1\\WebService1.asmx.cs",
               "RelativeToolTip": "WebApplication1\\WebService1.asmx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T10:39:58.949Z",
               "EditorCaption": ""

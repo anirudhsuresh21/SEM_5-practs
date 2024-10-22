@@ -13,13 +13,11 @@ namespace WebApplication1
         {
 
         }
-
         protected void Button1_Click(object sender, EventArgs e)
         {
             WebService1 webService = new WebService1();
             int number = Int32.Parse(TextBox1.Text);
             Label2.Text = webService.CheckEvenOdd(number);
-
         }
     }
 }
